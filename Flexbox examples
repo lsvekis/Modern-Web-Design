@@ -1,0 +1,148 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+
+Lesson 1 
+
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: aliceblue;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+.main > div{
+    border:1px solid black;
+    text-align:center;
+    padding:2px;
+    min-height:100px;
+    line-height: 100px;
+    width:100px;
+}
+
+.el1{
+    background-color: red;
+}
+.el8{
+    background-color:blue;
+}
+
+
+
+
+Lesson 2 
+
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: aliceblue;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-items:flex-end;
+    align-content:center;
+}
+
+.main > div{
+     border:1px solid black;
+    text-align:center;
+    padding:2px;
+    min-height:100px;
+    line-height: 100px;
+    width:100px;
+}
+
+.el1{
+    background-color: red;
+    height:200px;
+}
+.el2{
+    height:50px;
+}
+.el3{
+    height:350px;
+}
+.el8{
+    background-color:blue;
+    order:4;
+    height:400px;
+}
+
+Lesson 3
+
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: aliceblue;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.main > div{
+     border:1px solid black;
+    text-align:center;
+    padding:2px;
+    min-height:100px;
+    flex: 33%;
+}
+
+.el1{
+    background-color: red;
+    height:200px;
+    order:5;
+}
+.el2{
+    height:50px;
+    background-color:lawngreen;
+    flex-grow: 3;
+}
+.el3{
+    height:350px;
+    flex-grow: 2;
+}
+.el4{
+    height:150px;
+    background-color:purple;
+    align-self:flex-end;
+}
+.el8{
+    background-color:blue;
+    order:4;
+    height:400px;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="flex.css">
+</head>
+<body>
+    <div class="main">
+        <div class="el1">Element 1</div>
+        <div class="el2">Element 2</div>
+        <div class="el3">Element 3</div>
+        <div class="el4">Element 4</div>
+        <div class="el5">Element 5</div>
+        <div class="el6">Element 6</div>    
+        <div class="el7">Element 7</div>
+        <div class="el8">Element 8</div>   
+    </div>
+</body>
+</html>
+
