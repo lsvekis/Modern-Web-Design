@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Example</title>
+  <link rel="stylesheet" href="rainbow.css" type="text/css">
+</head>
+<body>
+    <div class="output">
+    </div>
+</body>
+</html>
+
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:auto;
+}
+.output{
+    border:1px solid black;
+    width: 100vw;
+    height:50vw;
+    position:relative;
+    overflow:hidden;
+    background:black;
+}
+.output:after{
+    content:'';
+    position:absolute;
+    width:50%;
+    height:100%;
+    border-radius: 50%;
+    left:25%;
+    top:50%;
+    box-shadow: 0 0 0 2vw purple, 0 0 0 4vw blue, 0 0 0 6vw lightblue, 0 0 0 8vw green, 0 0 0 10vw yellow, 0 0 0 12vw orange ,  0 0 0 14vw red,  0 0 0 16vw pink;
+}
