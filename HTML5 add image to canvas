@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Example</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas><br>
+  <input type="file" id="uploader">
+  <div class="output"></div>
+  <script>
+    const canvas = document.querySelector('#canvas');
+    const ctx = canvas.getContext('2d');
+    const uploader = document.querySelector('#uploader');
+    uploader.addEventListener('change',(e)=>{
+      console.log(canvas.height,canvas.width);
+      const myFile = uploader.files[0];
+      console.log(myFile.name);
+      const img = new Image();
+      img.src = URL.createObjectURL(myFile);
+      img.onload = function(){
+        console.log(img.height,img.width);
+        //canvas.height = img.height;
+        //canvas.width = img.width;
+        ctx.drawImage(img,0,0,canvas.width,canvas.height);
+      }
+    })
+
+    </script>
+</body>
+</html>
