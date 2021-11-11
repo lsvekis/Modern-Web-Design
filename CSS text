@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Example</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    .output {
+      font-family: 'Permanent Marker', cursive;
+      font-size:2em;
+      border:1px solid red;
+      text-align:center;
+      height:100px;
+      line-height:100px;
+      text-transform:uppercase;
+    }
+  </style>
+</head>
+<body>
+   <div class="output">Hello World</div>
+</body>
+</html>
