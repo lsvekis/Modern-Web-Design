@@ -1,0 +1,35 @@
+const output = document.querySelector('.output');
+
+const div1 = document.createElement('div');
+output.append(div1);
+
+const div2 = document.createElement('div');
+output.append(div2);
+
+div1.innerHTML = 'Hello World 1';
+div2.textContent = 'Hello World 2';
+
+div1.style.fontSize = '2em';
+div1.style.padding = '10px';
+div1.style.border = '1px solid red';
+div1.style.textAlign = 'center';
+
+div2.style.textAlign = 'center';
+div2.style.margin = '20px auto';
+div2.style.border = '1px solid blue';
+div2.style.width = '50%';
+div2.style.lineHeight = '50px';
+div2.style.height = '50px';
+div2.style.color = 'red';
+div2.style.textTransform = 'uppercase';
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Example</title>
+</head>
+<body>
+   <div class="output">Hello World</div>
+   <script src="app15.js"></script>
+</body>
+</html>
