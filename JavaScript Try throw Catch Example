@@ -1,0 +1,33 @@
+const output = document.querySelector('.output');
+
+output.addEventListener('click',testFun);
+
+function testFun(){
+    console.log('ready');
+    const x = 10;
+    //fun();
+    try {
+        //fun();
+        if(x > 5){
+            console.log('works okay');
+        }else {
+            throw 'x is too small';
+        }
+    } catch(error) {
+        console.log(error);
+    } finally {
+        console.log('complete');
+    }
+    console.log('done');
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Example</title>
+</head>
+<body>
+   <div class="output">Hello World</div>
+   <script src="app14.js"></script>
+</body>
+</html>
