@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+</head>
+<body>
+  <div class="output">
+    <ul class="one box">
+      <li>List 1 Item 1</li>
+      <li>List 1 Item 2</li>
+      <li>List 1 Item 3</li>
+      <li>List 1 Item 4</li>
+      <li>List 1 Item 5</li>
+    </ul>
+    <ul class="two box">
+      <li>List 2 Item 1</li>
+      <li>List 2 Item 2</li>
+      <li>List 2 Item 3</li>
+      <li>List 2 Item 4</li>
+      <li>List 2 Item 5</li>
+    </ul>
+    <ul class="three box">
+      <li>List 3 Item 1</li>
+      <li>List 3 Item 2</li>
+      <li>List 3 Item 3</li>
+      <li>List 3 Item 4</li>
+      <li>List 3 Item 5</li>
+    </ul>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src='app21.js'></script>
+</body>
+</html>
+
+$('ul.one li:eq(0)').css('backgroundColor','red');
+$('ul.box li:eq(2)').css('backgroundColor','blue');
+
+$('ul.box').each((ind,ele)=>{
+    console.log($(ele).find('li:eq(1)'));
+    $(ele).find('li:eq(1)').css('backgroundColor','yellow');
+})
+
+$('ul.box li:nth-child(4)').css('backgroundColor','green');
